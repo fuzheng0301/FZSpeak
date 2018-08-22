@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A155BBA21246EC4007DC61E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BB921246EC4007DC61E /* AppDelegate.m */; };
+		3A155BBD21246EC4007DC61E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BBC21246EC4007DC61E /* ViewController.m */; };
+		3A155BC021246EC4007DC61E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A155BBE21246EC4007DC61E /* Main.storyboard */; };
+		3A155BC221246EC8007DC61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A155BC121246EC8007DC61E /* Assets.xcassets */; };
+		3A155BC521246EC8007DC61E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A155BC321246EC8007DC61E /* LaunchScreen.storyboard */; };
+		3A155BC821246EC8007DC61E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BC721246EC8007DC61E /* main.m */; };
+		3A155BED21246ED6007DC61E /* FZSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BD021246ED6007DC61E /* FZSpeechRecognizer.m */; };
+		3A155BEE21246ED6007DC61E /* FZSpeechEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BD121246ED6007DC61E /* FZSpeechEvaluator.m */; };
+		3A155BEF21246ED6007DC61E /* FZSpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BD221246ED6007DC61E /* FZSpeechSynthesizer.m */; };
+		3A155BF021246ED6007DC61E /* ISEResultSyll.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BD621246ED6007DC61E /* ISEResultSyll.m */; };
+		3A155BF121246ED6007DC61E /* ISEResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BD721246ED6007DC61E /* ISEResult.m */; };
+		3A155BF221246ED6007DC61E /* ISEResultReadSyllable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BD821246ED6007DC61E /* ISEResultReadSyllable.m */; };
+		3A155BF321246ED6007DC61E /* ISEResultReadSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BDA21246ED6007DC61E /* ISEResultReadSentence.m */; };
+		3A155BF421246ED6007DC61E /* ISEResultReadWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BDB21246ED6007DC61E /* ISEResultReadWord.m */; };
+		3A155BF521246ED6007DC61E /* ISEResultPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BDC21246ED6007DC61E /* ISEResultPhone.m */; };
+		3A155BF621246ED6007DC61E /* ISEResultSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BDD21246ED6007DC61E /* ISEResultSentence.m */; };
+		3A155BF721246ED6007DC61E /* ISEResultWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BE721246ED6007DC61E /* ISEResultWord.m */; };
+		3A155BF821246ED6007DC61E /* ISEResultXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BE821246ED6007DC61E /* ISEResultXmlParser.m */; };
+		3A155BF921246ED6007DC61E /* ISEResultTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BE921246ED6007DC61E /* ISEResultTools.m */; };
+		3A155BFA21246ED6007DC61E /* ISEResultFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155BEA21246ED6007DC61E /* ISEResultFinal.m */; };
+		3A155BFD21246FA2007DC61E /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A155BFC21246FA2007DC61E /* iflyMSC.framework */; };
+		3A155BFF21246FAC007DC61E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A155BFE21246FAC007DC61E /* CoreTelephony.framework */; };
+		3A155C0121246FB2007DC61E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A155C0021246FB2007DC61E /* AVFoundation.framework */; };
+		3A155C0321246FB9007DC61E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A155C0221246FB9007DC61E /* AudioToolbox.framework */; };
+		3A155C0521246FBF007DC61E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A155C0421246FBF007DC61E /* libz.tbd */; };
+		3A155C0721246FC5007DC61E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A155C0621246FC5007DC61E /* libc++.tbd */; };
+		3A155C0921246FCA007DC61E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A155C0821246FCA007DC61E /* SystemConfiguration.framework */; };
+		3A155C232124704E007DC61E /* alert_success_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A155C1B2124704E007DC61E /* alert_success_icon.png */; };
+		3A155C242124704E007DC61E /* alert_error_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A155C1C2124704E007DC61E /* alert_error_icon@2x.png */; };
+		3A155C252124704E007DC61E /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A155C1D2124704E007DC61E /* refresh@2x.png */; };
+		3A155C262124704E007DC61E /* FZProgressHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A155C1E2124704E007DC61E /* FZProgressHudView.m */; };
+		3A155C272124704E007DC61E /* alert_error_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A155C1F2124704E007DC61E /* alert_error_icon.png */; };
+		3A155C282124704E007DC61E /* alert_success_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A155C212124704E007DC61E /* alert_success_icon@2x.png */; };
+		3A155C292124704E007DC61E /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A155C222124704E007DC61E /* refresh.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A155BB521246EC4007DC61E /* FZSpeakDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZSpeakDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A155BB821246EC4007DC61E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A155BB921246EC4007DC61E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A155BBB21246EC4007DC61E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A155BBC21246EC4007DC61E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A155BBF21246EC4007DC61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A155BC121246EC8007DC61E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A155BC421246EC8007DC61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A155BC621246EC8007DC61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A155BC721246EC8007DC61E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A155BCF21246ED6007DC61E /* FZSpeakClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSpeakClass.h; sourceTree = "<group>"; };
+		3A155BD021246ED6007DC61E /* FZSpeechRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZSpeechRecognizer.m; sourceTree = "<group>"; };
+		3A155BD121246ED6007DC61E /* FZSpeechEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZSpeechEvaluator.m; sourceTree = "<group>"; };
+		3A155BD221246ED6007DC61E /* FZSpeechSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZSpeechSynthesizer.m; sourceTree = "<group>"; };
+		3A155BD321246ED6007DC61E /* FZSpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSpeechRecognizer.h; sourceTree = "<group>"; };
+		3A155BD421246ED6007DC61E /* FZSpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSpeechSynthesizer.h; sourceTree = "<group>"; };
+		3A155BD621246ED6007DC61E /* ISEResultSyll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultSyll.m; sourceTree = "<group>"; };
+		3A155BD721246ED6007DC61E /* ISEResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResult.m; sourceTree = "<group>"; };
+		3A155BD821246ED6007DC61E /* ISEResultReadSyllable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultReadSyllable.m; sourceTree = "<group>"; };
+		3A155BD921246ED6007DC61E /* ISEResultWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultWord.h; sourceTree = "<group>"; };
+		3A155BDA21246ED6007DC61E /* ISEResultReadSentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultReadSentence.m; sourceTree = "<group>"; };
+		3A155BDB21246ED6007DC61E /* ISEResultReadWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultReadWord.m; sourceTree = "<group>"; };
+		3A155BDC21246ED6007DC61E /* ISEResultPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultPhone.m; sourceTree = "<group>"; };
+		3A155BDD21246ED6007DC61E /* ISEResultSentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultSentence.m; sourceTree = "<group>"; };
+		3A155BDE21246ED6007DC61E /* ISEResultFinal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultFinal.h; sourceTree = "<group>"; };
+		3A155BDF21246ED6007DC61E /* ISEResultXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultXmlParser.h; sourceTree = "<group>"; };
+		3A155BE021246ED6007DC61E /* ISEResultTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultTools.h; sourceTree = "<group>"; };
+		3A155BE121246ED6007DC61E /* ISEResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResult.h; sourceTree = "<group>"; };
+		3A155BE221246ED6007DC61E /* ISEResultSyll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultSyll.h; sourceTree = "<group>"; };
+		3A155BE321246ED6007DC61E /* ISEResultReadSyllable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultReadSyllable.h; sourceTree = "<group>"; };
+		3A155BE421246ED6007DC61E /* ISEResultPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultPhone.h; sourceTree = "<group>"; };
+		3A155BE521246ED6007DC61E /* ISEResultReadSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultReadSentence.h; sourceTree = "<group>"; };
+		3A155BE621246ED6007DC61E /* ISEResultReadWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultReadWord.h; sourceTree = "<group>"; };
+		3A155BE721246ED6007DC61E /* ISEResultWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultWord.m; sourceTree = "<group>"; };
+		3A155BE821246ED6007DC61E /* ISEResultXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultXmlParser.m; sourceTree = "<group>"; };
+		3A155BE921246ED6007DC61E /* ISEResultTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultTools.m; sourceTree = "<group>"; };
+		3A155BEA21246ED6007DC61E /* ISEResultFinal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISEResultFinal.m; sourceTree = "<group>"; };
+		3A155BEB21246ED6007DC61E /* ISEResultSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISEResultSentence.h; sourceTree = "<group>"; };
+		3A155BEC21246ED6007DC61E /* FZSpeechEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSpeechEvaluator.h; sourceTree = "<group>"; };
+		3A155BFC21246FA2007DC61E /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = FZSpeakDemo/iflyMSC.framework; sourceTree = "<group>"; };
+		3A155BFE21246FAC007DC61E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3A155C0021246FB2007DC61E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3A155C0221246FB9007DC61E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3A155C0421246FBF007DC61E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3A155C0621246FC5007DC61E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3A155C0821246FCA007DC61E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3A155C1B2124704E007DC61E /* alert_success_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert_success_icon.png; sourceTree = "<group>"; };
+		3A155C1C2124704E007DC61E /* alert_error_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert_error_icon@2x.png"; sourceTree = "<group>"; };
+		3A155C1D2124704E007DC61E /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
+		3A155C1E2124704E007DC61E /* FZProgressHudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZProgressHudView.m; sourceTree = "<group>"; };
+		3A155C1F2124704E007DC61E /* alert_error_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert_error_icon.png; sourceTree = "<group>"; };
+		3A155C202124704E007DC61E /* FZProgressHudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZProgressHudView.h; sourceTree = "<group>"; };
+		3A155C212124704E007DC61E /* alert_success_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert_success_icon@2x.png"; sourceTree = "<group>"; };
+		3A155C222124704E007DC61E /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A155BB221246EC4007DC61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A155C0921246FCA007DC61E /* SystemConfiguration.framework in Frameworks */,
+				3A155C0721246FC5007DC61E /* libc++.tbd in Frameworks */,
+				3A155C0521246FBF007DC61E /* libz.tbd in Frameworks */,
+				3A155C0321246FB9007DC61E /* AudioToolbox.framework in Frameworks */,
+				3A155C0121246FB2007DC61E /* AVFoundation.framework in Frameworks */,
+				3A155BFF21246FAC007DC61E /* CoreTelephony.framework in Frameworks */,
+				3A155BFD21246FA2007DC61E /* iflyMSC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A155BAC21246EC4007DC61E = {
+			isa = PBXGroup;
+			children = (
+				3A155BB721246EC4007DC61E /* FZSpeakDemo */,
+				3A155BB621246EC4007DC61E /* Products */,
+				3A155BFB21246FA2007DC61E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A155BB621246EC4007DC61E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A155BB521246EC4007DC61E /* FZSpeakDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A155BB721246EC4007DC61E /* FZSpeakDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3A155C1A2124704E007DC61E /* FZProgerssHud */,
+				3A155BCE21246ED6007DC61E /* FZSpeakClass */,
+				3A155BB821246EC4007DC61E /* AppDelegate.h */,
+				3A155BB921246EC4007DC61E /* AppDelegate.m */,
+				3A155BBB21246EC4007DC61E /* ViewController.h */,
+				3A155BBC21246EC4007DC61E /* ViewController.m */,
+				3A155BBE21246EC4007DC61E /* Main.storyboard */,
+				3A155BC121246EC8007DC61E /* Assets.xcassets */,
+				3A155BC321246EC8007DC61E /* LaunchScreen.storyboard */,
+				3A155BC621246EC8007DC61E /* Info.plist */,
+				3A155BC721246EC8007DC61E /* main.m */,
+			);
+			path = FZSpeakDemo;
+			sourceTree = "<group>";
+		};
+		3A155BCE21246ED6007DC61E /* FZSpeakClass */ = {
+			isa = PBXGroup;
+			children = (
+				3A155BCF21246ED6007DC61E /* FZSpeakClass.h */,
+				3A155BD321246ED6007DC61E /* FZSpeechRecognizer.h */,
+				3A155BD021246ED6007DC61E /* FZSpeechRecognizer.m */,
+				3A155BEC21246ED6007DC61E /* FZSpeechEvaluator.h */,
+				3A155BD121246ED6007DC61E /* FZSpeechEvaluator.m */,
+				3A155BD421246ED6007DC61E /* FZSpeechSynthesizer.h */,
+				3A155BD221246ED6007DC61E /* FZSpeechSynthesizer.m */,
+				3A155BD521246ED6007DC61E /* ISEResultXmlParser */,
+			);
+			path = FZSpeakClass;
+			sourceTree = "<group>";
+		};
+		3A155BD521246ED6007DC61E /* ISEResultXmlParser */ = {
+			isa = PBXGroup;
+			children = (
+				3A155BD621246ED6007DC61E /* ISEResultSyll.m */,
+				3A155BD721246ED6007DC61E /* ISEResult.m */,
+				3A155BD821246ED6007DC61E /* ISEResultReadSyllable.m */,
+				3A155BD921246ED6007DC61E /* ISEResultWord.h */,
+				3A155BDA21246ED6007DC61E /* ISEResultReadSentence.m */,
+				3A155BDB21246ED6007DC61E /* ISEResultReadWord.m */,
+				3A155BDC21246ED6007DC61E /* ISEResultPhone.m */,
+				3A155BDD21246ED6007DC61E /* ISEResultSentence.m */,
+				3A155BDE21246ED6007DC61E /* ISEResultFinal.h */,
+				3A155BDF21246ED6007DC61E /* ISEResultXmlParser.h */,
+				3A155BE021246ED6007DC61E /* ISEResultTools.h */,
+				3A155BE121246ED6007DC61E /* ISEResult.h */,
+				3A155BE221246ED6007DC61E /* ISEResultSyll.h */,
+				3A155BE321246ED6007DC61E /* ISEResultReadSyllable.h */,
+				3A155BE421246ED6007DC61E /* ISEResultPhone.h */,
+				3A155BE521246ED6007DC61E /* ISEResultReadSentence.h */,
+				3A155BE621246ED6007DC61E /* ISEResultReadWord.h */,
+				3A155BE721246ED6007DC61E /* ISEResultWord.m */,
+				3A155BE821246ED6007DC61E /* ISEResultXmlParser.m */,
+				3A155BE921246ED6007DC61E /* ISEResultTools.m */,
+				3A155BEA21246ED6007DC61E /* ISEResultFinal.m */,
+				3A155BEB21246ED6007DC61E /* ISEResultSentence.h */,
+			);
+			path = ISEResultXmlParser;
+			sourceTree = "<group>";
+		};
+		3A155BFB21246FA2007DC61E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A155C0821246FCA007DC61E /* SystemConfiguration.framework */,
+				3A155C0621246FC5007DC61E /* libc++.tbd */,
+				3A155C0421246FBF007DC61E /* libz.tbd */,
+				3A155C0221246FB9007DC61E /* AudioToolbox.framework */,
+				3A155C0021246FB2007DC61E /* AVFoundation.framework */,
+				3A155BFE21246FAC007DC61E /* CoreTelephony.framework */,
+				3A155BFC21246FA2007DC61E /* iflyMSC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A155C1A2124704E007DC61E /* FZProgerssHud */ = {
+			isa = PBXGroup;
+			children = (
+				3A155C202124704E007DC61E /* FZProgressHudView.h */,
+				3A155C1E2124704E007DC61E /* FZProgressHudView.m */,
+				3A155C1B2124704E007DC61E /* alert_success_icon.png */,
+				3A155C1C2124704E007DC61E /* alert_error_icon@2x.png */,
+				3A155C1D2124704E007DC61E /* refresh@2x.png */,
+				3A155C1F2124704E007DC61E /* alert_error_icon.png */,
+				3A155C212124704E007DC61E /* alert_success_icon@2x.png */,
+				3A155C222124704E007DC61E /* refresh.png */,
+			);
+			path = FZProgerssHud;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A155BB421246EC4007DC61E /* FZSpeakDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A155BCB21246EC8007DC61E /* Build configuration list for PBXNativeTarget "FZSpeakDemo" */;
+			buildPhases = (
+				3A155BB121246EC4007DC61E /* Sources */,
+				3A155BB221246EC4007DC61E /* Frameworks */,
+				3A155BB321246EC4007DC61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FZSpeakDemo;
+			productName = FZSpeakDemo;
+			productReference = 3A155BB521246EC4007DC61E /* FZSpeakDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A155BAD21246EC4007DC61E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "付正";
+				TargetAttributes = {
+					3A155BB421246EC4007DC61E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 3A155BB021246EC4007DC61E /* Build configuration list for PBXProject "FZSpeakDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A155BAC21246EC4007DC61E;
+			productRefGroup = 3A155BB621246EC4007DC61E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A155BB421246EC4007DC61E /* FZSpeakDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A155BB321246EC4007DC61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A155C242124704E007DC61E /* alert_error_icon@2x.png in Resources */,
+				3A155C272124704E007DC61E /* alert_error_icon.png in Resources */,
+				3A155BC521246EC8007DC61E /* LaunchScreen.storyboard in Resources */,
+				3A155C232124704E007DC61E /* alert_success_icon.png in Resources */,
+				3A155BC221246EC8007DC61E /* Assets.xcassets in Resources */,
+				3A155C252124704E007DC61E /* refresh@2x.png in Resources */,
+				3A155C282124704E007DC61E /* alert_success_icon@2x.png in Resources */,
+				3A155C292124704E007DC61E /* refresh.png in Resources */,
+				3A155BC021246EC4007DC61E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A155BB121246EC4007DC61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A155BBD21246EC4007DC61E /* ViewController.m in Sources */,
+				3A155BF521246ED6007DC61E /* ISEResultPhone.m in Sources */,
+				3A155BC821246EC8007DC61E /* main.m in Sources */,
+				3A155BF821246ED6007DC61E /* ISEResultXmlParser.m in Sources */,
+				3A155BBA21246EC4007DC61E /* AppDelegate.m in Sources */,
+				3A155BF721246ED6007DC61E /* ISEResultWord.m in Sources */,
+				3A155BF421246ED6007DC61E /* ISEResultReadWord.m in Sources */,
+				3A155BF321246ED6007DC61E /* ISEResultReadSentence.m in Sources */,
+				3A155BEE21246ED6007DC61E /* FZSpeechEvaluator.m in Sources */,
+				3A155BFA21246ED6007DC61E /* ISEResultFinal.m in Sources */,
+				3A155BF221246ED6007DC61E /* ISEResultReadSyllable.m in Sources */,
+				3A155BEF21246ED6007DC61E /* FZSpeechSynthesizer.m in Sources */,
+				3A155BF021246ED6007DC61E /* ISEResultSyll.m in Sources */,
+				3A155C262124704E007DC61E /* FZProgressHudView.m in Sources */,
+				3A155BF921246ED6007DC61E /* ISEResultTools.m in Sources */,
+				3A155BF621246ED6007DC61E /* ISEResultSentence.m in Sources */,
+				3A155BF121246ED6007DC61E /* ISEResult.m in Sources */,
+				3A155BED21246ED6007DC61E /* FZSpeechRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A155BBE21246EC4007DC61E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A155BBF21246EC4007DC61E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A155BC321246EC8007DC61E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A155BC421246EC8007DC61E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A155BC921246EC8007DC61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A155BCA21246EC8007DC61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A155BCC21246EC8007DC61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A99RNRSDE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FZSpeakDemo",
+				);
+				INFOPLIST_FILE = FZSpeakDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Reapal.FZSpeakDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A155BCD21246EC8007DC61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A99RNRSDE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FZSpeakDemo",
+				);
+				INFOPLIST_FILE = FZSpeakDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Reapal.FZSpeakDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A155BB021246EC4007DC61E /* Build configuration list for PBXProject "FZSpeakDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A155BC921246EC8007DC61E /* Debug */,
+				3A155BCA21246EC8007DC61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A155BCB21246EC8007DC61E /* Build configuration list for PBXNativeTarget "FZSpeakDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A155BCC21246EC8007DC61E /* Debug */,
+				3A155BCD21246EC8007DC61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A155BAD21246EC4007DC61E /* Project object */;
+}
