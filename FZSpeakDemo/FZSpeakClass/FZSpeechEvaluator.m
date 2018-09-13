@@ -52,7 +52,7 @@
 }
 
 #pragma mark --- 语音评测
-+ (void)xf_AudioEvaluationOfText:(NSString *)text callback:(void (^)(XF_Audio_Evaluation_Type type, NSInteger progress, NSString *resultMsg))callback
++ (void)xf_AudioEvaluationOfText:(NSString *)text callback:(void (^)(XF_Audio_Evaluation_Type type, float progress, NSString *resultMsg))callback
 {
 	// 2.开始语音测评
 //	NSData *textData = [text dataUsingEncoding:NSUTF8StringEncoding];
@@ -188,8 +188,9 @@
 	NSLog(@"----%@",[result toString]);
 	
 	NSDictionary *resultDic = [self returnResultDicWithResultStr: [result toString]];
-	
-	[FZSpeechEvaluator sharedInstance].xf_evacallback(XF_Audio_Evaluation_Result,[[resultDic objectForKey:@"Total Score"] integerValue],[resultDic objectForKey:@"Content"]);
+	float resultScore = [[resultDic objectForKey:@"Total Score"] floatValue];
+	resultScore = resultScore*20;
+	[FZSpeechEvaluator sharedInstance].xf_evacallback(XF_Audio_Evaluation_Result,resultScore,[resultDic objectForKey:@"Content"]);
 }
 
 #pragma mark --- 解析结果

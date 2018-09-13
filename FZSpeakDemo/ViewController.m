@@ -61,13 +61,13 @@
 -(void)AudioEvaluation
 {
 	//语音评测
-	[FZSpeechEvaluator xf_AudioEvaluationOfText:textV.text callback:^(XF_Audio_Evaluation_Type type, NSInteger progress, NSString *resultMsg) {
+	[FZSpeechEvaluator xf_AudioEvaluationOfText:textV.text callback:^(XF_Audio_Evaluation_Type type, float progress, NSString *resultMsg) {
 		if (type == XF_Audio_Evaluation_Begain) {
 			//开始录音
 			[self.hudView startWork:@"开始录音"];
 		} else if (type == XF_Audio_Evaluation_Volume) {
 			//录音音量
-			[self.hudView startWork:[NSString stringWithFormat:@"录音音量：%ld",progress]];
+			[self.hudView startWork:[NSString stringWithFormat:@"录音音量：%ld",(long)progress]];
 		} else if (type == XF_Audio_Evaluation_End) {
 			//停止录音
 			[self.hudView startWork:@"停止录音"];
@@ -79,12 +79,12 @@
 			if (progress == 0) {
 				[self.hudView showHudWithFailure:@"你好像读的不对哦" andDuration:1.2];
 			} else {
-				[self.hudView showHudWithSuccess:[NSString stringWithFormat:@"评测“%@”结果评分：%ld",resultMsg,progress] andDuration:2.0];
+				[self.hudView showHudWithSuccess:[NSString stringWithFormat:@"评测“%@”结果评分：%.2f",resultMsg,progress] andDuration:2.0];
 			}
 		} else {
 			//评测出错
 			if (progress != 0) {
-				[self.hudView showHudWithFailure:[NSString stringWithFormat:@"评测出错：code=%ld，msg=%@",progress,resultMsg] andDuration:1.0];
+				[self.hudView showHudWithFailure:[NSString stringWithFormat:@"评测出错：code=%.2f，msg=%@",progress,resultMsg] andDuration:1.0];
 			}
 		}
 	}];

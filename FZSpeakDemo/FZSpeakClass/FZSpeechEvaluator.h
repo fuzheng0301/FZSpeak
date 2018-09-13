@@ -19,7 +19,7 @@ typedef enum : NSUInteger {
 	XF_Audio_Evaluation_Error,		//评测失败
 } XF_Audio_Evaluation_Type;	//语音测评状态
 
-typedef void (^XFAudioEvaCallback)(XF_Audio_Evaluation_Type type, NSInteger progress, NSString *resultMsg);
+typedef void (^XFAudioEvaCallback)(XF_Audio_Evaluation_Type type, float progress, NSString *resultMsg);
 
 @interface FZSpeechEvaluator : NSObject
 
@@ -37,7 +37,7 @@ typedef void (^XFAudioEvaCallback)(XF_Audio_Evaluation_Type type, NSInteger prog
  @param text 评测内容
  @param callback 评测结果返回
  */
-+ (void)xf_AudioEvaluationOfText: (NSString *)text callback:(void(^)(XF_Audio_Evaluation_Type type, NSInteger progress, NSString *resultMsg))callback;
++ (void)xf_AudioEvaluationOfText: (NSString *)text callback:(void(^)(XF_Audio_Evaluation_Type type, float progress, NSString *resultMsg))callback;
 
 /*!
  *  停止录音<br>
