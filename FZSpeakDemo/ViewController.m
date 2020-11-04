@@ -31,7 +31,7 @@
 	textV = [[UITextView alloc]initWithFrame:CGRectMake(10, 10, SCREEN_WIDTH-20, 150)];
 	textV.layer.borderWidth = 0.5;
 	textV.layer.borderColor = [UIColor lightGrayColor].CGColor;
-	textV.text = @"百度一下，你就知道。";
+	textV.text = @"语音操作，方便生活";
 	[self.view addSubview:textV];
 	
 	textVStr = @"";
@@ -95,6 +95,7 @@
 {
 	//语音听写
 	[self.hudView startWork:@"请讲话"];
+	self->textVStr = @"";
 	[FZSpeechRecognizer xf_AudioRecognizerResult:^(NSString *resText, NSError *error) {
 		if (!error) {
 			self->textVStr = [NSString stringWithFormat:@"%@%@",self->textVStr,resText];
